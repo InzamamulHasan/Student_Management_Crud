@@ -115,7 +115,11 @@ function search(){
             arr.push(students[i]);
         }
     }
-    display(arr)
+    if(data==""){
+        display(students);
+        return;
+    }
+    display(arr) ;
 }
 
 
