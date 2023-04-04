@@ -107,14 +107,16 @@ function display(arr){
 }
 function search(){
     let data=document.querySelector("#se").value;
+    let arr=[];
     console.log("haskj")
     for(let i=0;i<students.length;i++){
         console.log(students[i].name)
         if(students[i].name==data || students[i].email==data|| students[i].degree==data){
-            let arr=[];
             arr.push(students[i]);
-            display(arr);
         }
     }
+    display(arr)
 }
+
+
 
